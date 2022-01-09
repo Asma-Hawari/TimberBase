@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "3c4caffa-d6aa-47fd-b3b6-ddcb034a4eaa",
+		"name": "TimberBase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Edit a sawmill",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\":\"Asma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://timberbase-coding-challenge.herokuapp.com/api/v1/sawmill/2?name=William ",
+					"protocol": "https",
+					"host": [
+						"timberbase-coding-challenge",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sawmill",
+						"2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "William "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a specific sawmill",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\":\"Asma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://timberbase-coding-challenge.herokuapp.com/api/v1/sawmill/1",
+					"protocol": "https",
+					"host": [
+						"timberbase-coding-challenge",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sawmill",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List sawmills and filter them by name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\":\"Asma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://timberbase-coding-challenge.herokuapp.com/api/v1/sawmill/?name=Asma",
+					"protocol": "https",
+					"host": [
+						"timberbase-coding-challenge",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sawmill",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Asma"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a sawmill",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\":\"Reta\",\n\"city\":\"Hamburg\",\n\"country\":\"Berlin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://timberbase-coding-challenge.herokuapp.com/api/v1/sawmill",
+					"protocol": "https",
+					"host": [
+						"timberbase-coding-challenge",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sawmill"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
