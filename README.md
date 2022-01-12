@@ -35,11 +35,9 @@ the code is implemented using Spring Boot version 2.5.8 with Java 8, Postgress, 
 ### How to run the application?
 The application can be run in the following ways:
 
-1- Using the jar file in the resources folder by going to the terminal and rung the jar file as follows "{path to java }java -Dfile.encoding=UTF-8 -jar {path to the project}/TimberBase/src/main/resources/data/demo-0.0.1-SNAPSHOT.jar"
+1- Using the <a href="src/main/resources/data/resources/data/demo-0.0.1-SNAPSHOT.jar">jar</a> file in the resources folder. 
 
 2- Cloning the project and running it using IntelliJ IDEA.
-
-3- Since the application is deployed on Heroku, a postman collection can be found in "src/main/resources/data/TimberBase.postman_collection.json" to test all the endpoints.
 
 ### About the Architecture
 The architecture used in this repo is as follows:
@@ -47,6 +45,14 @@ The architecture used in this repo is as follows:
 <p align="center">
 <img src="src/main/resources/data/Architecture.png" alt="Architecture">
 </p>
+
+- The code is designed using the desgin patterns and coding best practice technique ,it's scalable where any new entity can be added easily in the same structure.
+- S.O.L.I.D Principles are applied.
+
+#### The End Points
+
+The application is deployed on Heroku, a postman collection can be found in <a href="src/main/resources/data/TimberBase.postman_collection.json">TimberBase.postman_collection.jso</a> to test all the endpoints.
+
 
 #### Code Test
 SpringBootTest is used to run integration tests for the Rest Controller, Positive tests are added.
